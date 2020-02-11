@@ -1,0 +1,20 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import "./_variables.scss";
+@import "./_typography.scss";
+
+@import "./components/base.scss";
+@import "./components/header.scss";
+@import "./components/main-section.scss";
+@import "./components/carousel.scss";
+@import "./components/trading-platform.scss";
+@import "./components/crypto-investing.scss";
+@import "./components/cryptocurrency-exchange.scss";
+@import "./components/competitive-trading.scss";
+@import "./components/partner-program.scss";
+@import "./components/account-box.scss";
+@import "./components/footer.scss";

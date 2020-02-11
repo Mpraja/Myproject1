@@ -1,0 +1,88 @@
+.log-box {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:white;
+    border-radius: 1.625rem;
+    box-shadow: 0 1.125rem 0.625rem #D3DEFD;
+    .text {
+        padding: 2.5rem;
+        margin-left: 1.25rem;
+        span {
+            color: $secondary;
+        }
+    }
+    .submit-buttons2 {
+        display: flex;
+        align-items: center;
+        button {
+            margin-left: 0.375rem;
+        }
+        .btn-dark {
+            padding: 0.875rem 1.25rem;
+            background-color:$button-dark-bg;
+            border-radius: 1rem;
+            border-color: $button-dark-bg;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+        .btn-light {
+            @extend .btn-dark;
+            background-color: $secondary;
+            color: white;
+        }
+    }
+}
+
+//media query for typography
+
+@media screen and (min-width: 360px) {
+    .submit-buttons2 {
+        .d-flex {
+            button {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 576px) {
+    .submit-buttons2 {
+        .d-flex {
+            button {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 768px) {
+    .submit-buttons2 {
+        .d-flex {
+            button {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .submit-buttons2 {
+        .d-flex {
+            button {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .submit-buttons2 {
+        .d-flex {
+            button {
+                font-size: 1rem;
+            }
+        }
+    }
+}

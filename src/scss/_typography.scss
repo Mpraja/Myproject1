@@ -1,0 +1,595 @@
+//base typography
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 2rem;
+}
+.display-1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+span {
+    font-weight: bold;
+}
+p {
+    font-size: 1.125rem;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+nav {
+    ul {
+        li {
+        font-size: 0.875rem;
+        }
+    }
+}
+.container-box {
+    .box {
+        .text1 {
+            span {
+                b {
+                    font-size: 1.125rem;
+                }
+            }
+            p {
+                font-size: 0.75rem;
+            }
+        }
+        .text2 {
+            p {
+                font-size: 1.5rem;
+            }
+            sup {
+                font-size: 0.75rem;
+            }
+            small {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.btn-warning {
+    font-size: 1rem;
+}
+.submit-buttons {
+    button {
+        font-size: 1rem;
+    }
+}
+.account-buttons {
+    button {
+        font-size: 1rem;
+    }
+}
+.submit-buttons2 {
+    .d-flex {
+        button {
+            font-size: 1rem;
+        }
+    }
+}
+.footer {
+    .language {
+        p {
+        font-size: 1.125rem;
+        }
+    }
+    .list-box {
+        ul {
+            li {
+                font-size: 1.125rem;
+            }
+        }
+    }
+    .bottom-text {
+        p {
+            font-size: 1.125rem;
+        }   
+    }
+}
+
+@media screen and (min-width: 360px) {
+    h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 1.25rem;//20px;
+    }
+    .display-1 {
+        font-size: 1.5rem;//24px;
+        font-weight: bold;
+    }
+    span {
+        font-weight: bold;
+    }
+    p {
+        font-size: 1rem;
+    }
+    // .logo {
+    //     font-size: 1.5rem;
+    //     font-weight: bold;
+    // }
+    // nav {
+    //     ul {
+    //         li {
+    //         font-size: 0.875rem;
+    //         }
+    //     }
+    // }
+    // .container-box {
+    //     .box {
+    //         .text1 {
+    //             span {
+    //                 b {
+    //                     font-size: 1.125rem;
+    //                 }
+    //             }
+    //             p {
+    //                 font-size: 0.875rem;
+    //             }
+    //         }
+    //         .text2 {
+    //             p {
+    //                 font-size: 1.5rem;
+    //             }
+    //             sup {
+    //                 font-size: 0.875rem;
+    //             }
+    //             small {
+    //                 font-size: 0.875rem;
+    //             }
+    //         }
+    //     }
+    // }
+    // .btn-warning {
+    //     font-size: 0.875rem;
+    // }
+    // .submit-buttons {
+    //     button {
+    //        font-size: 0.875rem;//14px;
+    //     }
+    // }
+    // .account-buttons {
+    //     button {
+    //         font-size: 0.875rem;
+    //     }
+    // }
+    // .submit-buttons2 {
+    //     .d-flex {
+    //         button {
+    //             font-size: 0.875rem;
+    //         }
+    //     }
+    // }
+    // .footer {
+    //     .language {
+    //         p {
+    //         font-size: 1rem;
+    //         }
+    //     }
+    //     .list-box {
+    //         ul {
+    //             li {
+    //                 font-size: 1rem;
+    //             }
+    //         }
+    //     }
+    //     .bottom-text {
+    //         p {
+    //             font-size: 1rem;
+    //         }   
+    //     }
+    // }
+
+}
+
+@media screen and (min-width: 576px) {
+    h1 {
+        font-size: 2.5rem;//40px;
+        font-weight: bold;
+        color: red;
+    }
+    h2 {
+        font-size: 1.75rem;//28px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .display-1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    span {
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.125rem;//18px;
+    }
+    // .logo {
+    //     font-size: 1.75rem;
+    //     font-weight: bold;
+    // }
+    // nav {
+    //     ul {
+    //         li {
+    //         font-size: 1rem;
+    //         }
+    //     }
+    // }
+    // .container-box {
+    //     .box {
+    //         .text1 {
+    //             span {
+    //                 b {
+    //                     font-size: 1.125rem;
+    //                 }
+    //             }
+    //             p {
+    //                 font-size: 0.875rem;
+    //             }
+    //         }
+    //         .text2 {
+    //             p {
+    //                 font-size: 1.5rem;
+    //             }
+    //             sup {
+    //                 font-size: 0.875rem;
+    //             }
+    //             small {
+    //                 font-size: 1rem;
+    //             }
+    //         }
+    //     }
+    // }
+    // .btn-warning {
+    //     font-size: 1rem;
+    // }
+    // .submit-buttons {
+    //     button {
+    //        font-size: 1rem;
+    //     }
+    // }
+    // .account-buttons {
+    //     button {
+    //         font-size: 1rem;
+    //     }
+    // }
+    // .submit-buttons2 {
+    //     .d-flex {
+    //         button {
+    //             font-size: 1rem;
+    //         }
+    //     }
+    // }
+    // .footer {
+    //     .language {
+    //         p {
+    //         font-size: 1.125rem;
+    //         }
+    //     }
+    //     .list-box {
+    //         ul {
+    //             li {
+    //                 font-size: 1rem;
+    //             }
+    //         }
+    //     }
+    //     .bottom-text {
+    //         p {
+    //             font-size: 1rem;
+    //         }   
+    //     }
+    // }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.5rem;//56px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .display-1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    span {
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+    // .logo {
+    //     font-size: 2rem;
+    //     font-weight: bold;
+    // }
+    // nav {
+    //     ul {
+    //         li {
+    //         font-size: 1.125rem;//18px
+    //         }
+    //     }
+    // }
+    // .container-box {
+    //     .box {
+    //         .text1 {
+    //             span {
+    //                 b {
+    //                     font-size: 1.5rem;
+    //                 }
+    //             }
+    //             p {
+    //                 font-size: 1rem;
+    //             }
+    //         }
+    //         .text2 {
+    //             p {
+    //                 font-size: 1.75rem;
+    //             }
+    //             sup {
+    //                 font-size: 1rem;
+    //             }
+    //             small {
+    //                 font-size: 1.25rem;
+    //             }
+    //         }
+    //     }
+    // }
+    // .btn-warning {
+    //     font-size: 1.125rem;
+    // }
+    // .submit-buttons {
+    //     button {
+    //        font-size: 1.125rem;
+    //     }
+    // }
+    // .account-buttons {
+    //     button {
+    //         font-size: 1.125rem;
+    //     }
+    // }
+    // .submit-buttons2 {
+    //     .d-flex {
+    //         button {
+    //             font-size: 1.125rem;
+    //         }
+    //     }
+    // }
+    // .footer {
+    //     .language {
+    //         p {
+    //         font-size: 1.25rem;
+    //         }
+    //     }
+    //     .list-box {
+    //         ul {
+    //             li {
+    //                 font-size: 1.125rem;
+    //             }
+    //         }
+    //     }
+    //     .bottom-text {
+    //         p {
+    //             font-size: 1.125rem;
+    //         }   
+    //     }
+    // }
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 2.125rem;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .display-1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    span {
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.125rem;
+    }
+    // .logo {
+    //     font-size: 2rem;
+    //     font-weight: bold;
+    // }
+    // nav {
+    //     ul {
+    //         li {
+    //         font-size: 0.875rem;
+    //         }
+    //     }
+    // }
+    // .container-box {
+    //     .box {
+    //         .text1 {
+    //             span {
+    //                 b {
+    //                     font-size: 1.125rem;
+    //                 }
+    //             }
+    //             p {
+    //                 font-size: 0.8125rem;
+    //             }
+    //         }
+    //         .text2 {
+    //             p {
+    //                 font-size: 1.5rem;
+    //             }
+    //             sup {
+    //                 font-size: 0.75rem;
+    //             }
+    //             small {
+    //                 font-size: 1rem;
+    //             }
+    //         }
+    //     }
+    // }
+    // .btn-warning {
+    //     font-size: 1rem;
+    // }
+    // .submit-buttons {
+    //     button {
+    //        font-size: 1rem;
+    //     }
+    // }
+    // .account-buttons {
+    //     button {
+    //         font-size: 1rem;
+    //     }
+    // }
+    // .submit-buttons2 {
+    //     .d-flex {
+    //         button {
+    //             font-size: 1rem;
+    //         }
+    //     }
+    // }
+    // .footer {
+    //     .language {
+    //         p {
+    //         font-size: 1.125rem;
+    //         }
+    //     }
+    //     .list-box {
+    //         ul {
+    //             li {
+    //                 font-size: 1.125rem;
+    //             }
+    //         }
+    //     }
+    //     .bottom-text {
+    //         p {
+    //             font-size: 1.125rem;
+    //         }   
+    //     }
+    // }
+
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 2.125rem;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .display-1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    span {
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.125rem;
+    }
+    // .logo {
+    //     font-size: 2.125rem;
+    //     font-weight: bold;
+    // }
+    // nav {
+    //     ul {
+    //         li {
+    //         font-size: 0.875rem;
+    //         }
+    //     }
+    // }
+    // .container-box {
+    //     .box {
+    //         .text1 {
+    //             span {
+    //                 b {
+    //                     font-size: 1.5rem;
+    //                 }
+    //             }
+    //             p {
+    //                 font-size: 1rem;
+    //             }
+    //         }
+    //         .text2 {
+    //             p {
+    //                 font-size: 1.75rem;
+    //             }
+    //             sup {
+    //                 font-size: 0.75rem;
+    //             }
+    //             small {
+    //                 font-size: 1rem;
+    //             }
+    //         }
+    //     }
+    // }
+    // .btn-warning {
+    //     font-size: 1rem;
+    // }
+    // .submit-buttons {
+    //     button {
+    //        font-size: 1rem;
+    //     }
+    // }
+    // .account-buttons {
+    //     button {
+    //         font-size: 1rem;
+    //     }
+    // }
+    // .submit-buttons2 {
+    //     .d-flex {
+    //         button {
+    //             font-size: 1rem;
+    //         }
+    //     }
+    // }
+    // .footer {
+    //     .language {
+    //         p {
+    //         font-size: 1.125rem;
+    //         }
+    //     }
+    //     .list-box {
+    //         ul {
+    //             li {
+    //                 font-size: 1.125rem;
+    //             }
+    //         }
+    //     }
+    //     .bottom-text {
+    //         p {
+    //             font-size: 1.125rem;
+    //         }   
+    //     }
+    // }    
+}

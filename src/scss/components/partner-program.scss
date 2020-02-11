@@ -1,0 +1,10 @@
+.content6 {
+    @extend .content1;
+    margin-top: 5rem;
+    span {
+        color: $secondary;
+    }
+    p {
+        color: black;
+    }
+}

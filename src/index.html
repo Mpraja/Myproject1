@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Streamex</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+        
+
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <div class="header row">
+                <nav class="navbar navbar-expand-lg navbar-light col col-sm col-md col-lg col-xl">
+                    <a class="navbar-brand" href="#">
+                        <i class="fab fa-speakap fa-3x"></i>
+                        <span class="logo">STREAMEX</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav nav-items">
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark" href="#exchange">EXCHANGE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#stebank">STEBANK</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#affiliate">AFFILIATE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#about">ABOUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="submit-buttons col col-sm col-md col-lg col-xl">
+                        <div class="container-modal">
+                            <button class="btn btn-primary btn-lg" type="button" id="modal-button">LOGIN</button>
+
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">User Login</h4>
+                                                <button class="close" type="button" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label class="e-mail float-left" for="email">Email:</label>
+                                                        <input class="form-control" type="email" id="email" name="e-mail" placeholder="Enter your email">
+                                                        <span id="userEmailError"></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="pswd float-left mt-1" for="password">Password:</label>
+                                                        <input class="form-control" type="password" id="password" name="password" placeholder="Enter your password">
+                                                        <span id="userPasswordError"></span>
+                                                    </div>
+                                                    <div class="form-group form-check">
+                                                        <label class="form-check-label float-left">
+                                                            <input class="form-check-input" type="checkbox" id="remember" name="remember">Remember me
+                                                        </label>
+                                                    </div><br>
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary" type="button" id="submit">Submit</button>
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="container-modal">
+                            <button class="btn btn-primary btn-lg" type="button" id="modal-button2">REGISTER</button>
+
+                                <div class="modal fade" id="myModal2" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">User Register</h4>
+                                                <button class="close" type="button" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label class="name float-left" for="name">Name:</label>
+                                                        <input class="form-control" type="text" id="text" name="name" placeholder="Enter your name">
+                                                        <span id="userNameError"></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="e-mail float-left" for="email">Email:</label>
+                                                        <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email">
+                                                        <span id="userEmailError"></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="pswd float-left" for="password">Password:</label>
+                                                        <input class="form-control" type="password" id="password" name="password" placeholder="Enter your password">
+                                                        <span id="userPasswordError"></span>
+                                                    </div>
+                                                    <div class="form-group form-check">
+                                                        <label class="form-check-label float-left">
+                                                            <input class="form-check-input" type="checkbox" id="agree" name="agree"> I agree
+                                                        </label>
+                                                    </div><br>
+                                                        <button class="btn btn-secondary float-left" type="button" id="submit">Submit</button>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-info" type="button" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id ="main-section">
+                <div class="first-container row">
+                    <div class="content1 col-sm col-md col-lg col-xl">
+                        <h1 class="animated pluse">Streamex</h1>
+                        <h1 class="display-1">Your crypto exchange<br> and banking solution.</h1>
+                        <p>Store your crypto safely and earn passive income.</p>
+                        <div class="account-buttons">
+                            <button class="btn btn-secondary" type="button">OPEN AN ACCOUNT</button>
+                            <button class="btn btn-success" type="button"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <!-- <div class="image mt-4 col-sm-12 col-md-12 col-lg col-xl"> -->
+                        <picture>
+                            <source media="(max-width:360px)" srcset="./images/img2.webp">
+                            <source media="(max-width:576px)" srcset="./images/img3.webp">
+                            <source media="(max-width:768px)" srcset="./images/img4.webp">
+                            <img class="img-fluid" src="./images/img1.jpg" width="600" height="300">
+                        </picture>
+                        <!-- <img class="img-fluid" src="./images/img1.jpg" alt="image1" width="600" height="300">
+                    </div> -->
+                </div>
+            </section>
+
+
+            <section id="carousel">
+                <div class="carousel slide" data-ride="carousel" id="myCarousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="item1 active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class="item2"></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class="item3"></li>
+                    </ul>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="container-box">
+                                <div class="box d-sm-none d-md-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                                <div class="box d-none d-sm-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                                <div class="box d-none d-sm-none d-md-none d-lg-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                                <div class="box d-none d-sm-none d-md-none d-lg-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container-box">
+                                <div class="box d-sm-none d-md-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                                <div class="box d-none d-sm-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                                <div class="box d-none d-sm-none d-md-none d-lg-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                                <div class="box d-none d-sm-none d-md-none d-lg-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container-box">
+                                <div class="box d-sm-none d-md-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                                <div class="box d-none d-sm-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                                <div class="box d-none d-sm-none d-md-none d-lg-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                                <div class="box d-none d-sm-none d-md-none d-lg-block">
+                                    <i class="fab fa-speakap fa-3x"></i>
+                                    <div class="text1">
+                                        <span><b>Streamex</b></span>
+                                        <p>24th Vol 238,287 USDT</p>
+                                    </div>
+                                    <div class="text2">
+                                        <p><b>&dollar;427.00</b><sup>+6.34%</sup></p>
+                                        <span>&dollar;383.00</span>
+                                        <small>Last 24h</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+
+            <section id="trading-platform">
+                <div class="second-container row" id="stebank">
+                    <div class="image mt-4 col-sm-12 col-md col-lg col-xl">
+                        <img class="img-fluid" src="./images/img2.jpg" alt="image2" width="600" height="300">
+                    </div>
+                    <div class="content2 col-sm col-md-12 col-lg col-xl">
+                        <h1 class="display-1"><span>Streamex</span> - cryptocurrency<br> trading platform for crypto<br> experts and novices.</h1><br><br>
+                        <p>We have designed and built a streamlined<br>cryptocurrency exchange platform for both crypto<br>newcomers and experts alike.</p>
+                        <p>Easily make deposits and conversions between crypotocurrencies<br>with just a few clicks or perform more complex market trades.</p>
+                        <div class="warning-buttons">
+                            <button class="btn btn-warning" type="button">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="crypto-investing">
+                <div class="content3">
+                    <h1 class="display-1"><span>Crypto Investing</span> for everyone<br> - Up to 15% annual interest</h1><br>
+                    <p>You're not a professional trader? No worries!</p>
+                    <p>You can profit on your crypto just by holding STE tokens<br>in your account balance. No looking of your funds and you choose<br>when and how you want to collect your profits.</p>
+                    <div class="warning-buttons">
+                        <button class="btn btn-warning" type="button">LEARN MORE</button>
+                    </div>
+                </div>
+            </section>
+            <section id="cryptocurrency-exchange">
+                <div class="content4" id="exchange">
+                    <h1 class="display-1"><span>Exchange better.</span> Faster. Together.</h1>
+                    <p>We have designed and built a streamlined cryptocurrency exchange platform<br>
+                    for both crypto newcomers and experts alike.</p>
+                </div>
+                <div class="counting-box-container">
+                    <div class="counting-box">
+                        <i class="far fa-dot-circle fa-3x"></i>
+                        <h2>20K+</h2>
+                        <p>Daily trading volume</p>
+                    </div>
+                    <div class="counting-box">
+                        <i class="far fa-dot-circle fa-3x"></i>
+                        <h2>290K+</h2>
+                        <p>Tokens Stored</p>
+                    </div>
+                    <div class="counting-box">
+                        <i class="far fa-dot-circle fa-3x"></i>
+                        <h2>100K</h2>
+                        <p>Happy users</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="competitive-trading">
+                <div class="third-container row">
+                    <img class="img-fluid mt-4 col-sm-12 col-md col-lg col-xl" src="./images/img3.jpg" alt="image3" width="600" height="300">
+                    <div class="content5 col-sm col-md-12 col-lg col-xl">
+                        <h1 class="display-1"><span>Competitive</span> trading fees</span></h1><br><br>
+                        <p>We pride ourselves in running an affordable<br>
+                            cryptocurrency exchange.</p>
+                        <p>By using our platform, you can save upto 70% on trading<br>
+                            less alone when compared to the global average.
+                        </p>
+                        <div class="warning-buttons">
+                            <button class="btn btn-warning" type="button">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="partner-program">
+                <div class="fourth-container row" id="affiliate">
+                    <div class="content6 col-sm col-md col-lg col-xl">
+                        <h1 class="display-1"><span>Partner Program</span> or Affiliate<br> program like no other</h1><br>
+                        <p>Our affiliate program is suitable for both casual crypto<br>
+                            enthusiasis as well as experienced marketers.<br><br></p>
+                        <p>Earn passive income just by refering your friends to join<br>
+                            Streamex or go guns blazing on a full-fledged webmaster<br>
+                            advertising compaign to get huge commissions.</p>
+                        <div class="warning-buttons">
+                            <button class="btn btn-warning" type="button">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="image mt-4 col-sm-12 col-md-12 col-lg col-xl">
+                        <img class="img-fluid" src="./images/img4.jpg" alt="image4" width="600" height="300">
+                    </div>
+                </div>
+            </section>
+
+            <section id="account-box">
+                <div class="container" id="about">
+                    <div class="log-box mt-5 row">
+                        <div class="col col-sm-8 col-md-7 col-lg-8 col-xl-8 text">
+                            <h3><span>Ready</span> to get started?</h3>
+                            <p>Get in touch or create an account.</p>
+                        </div>
+                        <div class=" submit-buttons2">
+                            <div class="d-flex">
+                                <button class="btn btn-dark" type="submit">LOGIN</button>
+                                <button class="btn btn-light" type="submit">GETSTARTED</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer mt-4">
+                <div class="footer-top container">
+                    <div class="row">
+                        <div class="language col col-sm col-md-2 col-lg-4 col-xl-5">
+                            <p>Language:<b>Russian</b></p>
+                        </div>
+                        <div class="list-box">
+                            <div class="list col col-sm col-md col-lg col-xl">
+                                <ul>
+                                    <li class="head"><b>LINKS</b></li>
+                                    <li>Exchange</li>
+                                    <li>Markets</li>
+                                    <li>Leaderboards</li>
+                                    <li>Fees</li>
+                                </ul>
+                            </div>
+                            <div class="list col col-sm col-md col-lg col-xl-6">
+                                <ul>
+                                    <li class="head"><b>HELP</b></li>
+                                    <li>FAQ</li>
+                                    <li>Pivacy Policy</li>
+                                    <li>Terms and conditions</li>
+                                    <li>Support</li>
+                                </ul>
+                            </div>
+                            <div class="list col col-sm col-md col-lg col-xl-5">
+                                <ul>
+                                    <li class="head"><b>CONNECT</b></li>
+                                    <li><i class="fab fa-telegram"></i> Telegram</li>
+                                    <li><i class="fab fa-twitter"></i> Twitter</li>
+                                    <li><i class="fab fa-facebook-square"></i> Facebook</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="container">
+                    <div class="footer-bottom mt-2 row">
+                        <div class="bottom-text col-12 col-sm-12 col-md-8 col-lg-9 col-xl-10">
+                            <p>&copy;2019-2020 Streamex</p>
+                        </div>
+                        <div class="bottom-text col col-sm col-md col-lg-3 col-xl">
+                            <p>All rights reserved</p>
+                        </div>
+                         <div class="bottom-text col col-sm col-md-3 col-lg-3 col-xl-2">
+                            <strong>mail@streamex.com</strong>
+                        </div>
+                     </div>
+                </div> -->
+            </div>
+            <div class="footer-example mt-4">
+                <div class="footer-bottom">
+                    <div class="bottom-text1">
+                        <p>&copy;2019-2020 Streamex</p>
+                    </div>
+                    <div class="bottom-text2 float-right">
+                        <p>All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+
+        <script type="text/javascript" src="./js/vendor.js"></script>
+        <script type ="text/javascript" src="./js/app.min.js"></script>
+
+    </body>
+</html>

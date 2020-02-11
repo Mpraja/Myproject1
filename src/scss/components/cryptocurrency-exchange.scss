@@ -1,0 +1,45 @@
+.content4 {
+    margin-top: 2.5rem;
+    text-align: center;
+    .display-1 {
+        color: black;
+        span {
+            color: $secondary;
+        }
+    }
+    span {
+        color: black;
+    }
+    p {
+        margin-top: 1.25rem;
+        color: black;
+    }
+}
+
+.counting-box-container {
+    text-align: center;
+    .counting-box {
+        display: inline-block;
+        width: 20rem;
+        height: 13.75rem;
+        margin: 0.625rem;
+        padding: 2.5rem 1.25rem;
+        background-color: $counting-box-bg;
+        text-align: center;
+        border-radius: 1.25rem;
+        box-shadow: 0 1.125rem 0.625rem $counting-box-shadow;
+        i {
+            padding: 0.625rem;
+            color: black;
+            background-color: $counting-box-icon-bg;
+            box-shadow: 0.125rem 0.5rem 0.625rem 0.125rem $counting-box-icon-shadow;
+            border-radius: 3.125rem;
+        }
+        h2 {
+            margin-top: 0.625rem;
+        }
+        p {
+            color: $primary;
+        }
+    }
+}

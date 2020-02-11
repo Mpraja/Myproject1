@@ -1,0 +1,327 @@
+.carousel  {
+    .carousel-indicators{
+    position: absolute;
+    bottom: 0%;
+    top: 100%;
+    }
+    .carousel-indicators li {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: $secondary;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+    filter: invert(100%);
+    }
+    .carousel-control-prev {
+        position: absolute;
+        left: -8%;
+    }
+    .carousel-control-next {
+        position: absolute;
+        left: 93%;
+    }
+
+}
+.container-box { 
+    display: flex;
+    justify-content: space-evenly;
+    .box {
+        display: inline-block;
+        width: 16.25rem;
+        height: 16.25rem;
+        margin: 0.625rem;
+        background-color:white;
+        border-radius: 1.25rem;
+        box-shadow: 0 1.125rem 0.625rem $counting-box-shadow;
+
+        i { 
+            margin-top: 1.25rem;
+            margin-left: 1rem;
+            color: $secondary;
+            vertical-align: middle;
+        }
+        .text1 {
+            position: relative;
+            bottom: 20%;
+            margin-left: 4.375rem;
+            p {
+                color: $container-box-small-color;
+            }
+        }
+        .text2 {
+            position: relative;
+            bottom: 14%;
+            margin-left: 1rem;
+            p {
+            margin-left: 1.25rem;
+            color: black;
+            }
+            sup {
+                color:#46DBC6;
+                margin-left: 0.375rem;
+                vertical-align: super;
+            }
+            span {
+                padding: 0.125rem 0.625rem;
+                margin-left: 1.25rem;
+                text-align: center;
+                color: $container-box-sup-color;
+                background-color: $container-box-span-bg;
+                border-radius: 0.625rem;
+            }
+            small {
+                color: $container-box-small-color;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carousel {
+            .carousel-control-prev {
+                position: absolute;
+                left: -2%;
+            }
+            .carousel-control-next {
+                position: absolute;
+                left: 87%;
+            }
+        }
+}
+@media screen and (max-width:576px) {
+    .carousel {
+            .carousel-control-prev {
+                position: absolute;
+                left: 12%;
+            }
+            .carousel-control-next {
+                position: absolute;
+                left: 72%;
+            }
+        }
+}
+@media screen and (max-width:360px) {
+    .carousel {
+            .carousel-control-prev {
+                position: absolute;
+                left: -2%;
+            }
+            .carousel-control-next {
+                position: absolute;
+                left: 86%;
+            }
+        }
+}
+
+@media screen and (max-width: 576px) {
+    .container-box { 
+        .box {  
+            i { 
+                margin-top: 1rem;
+                margin-left: 1.125rem;
+                color: $secondary;
+                }
+            .text1 {
+                position: relative;
+                bottom: 18%;
+                }
+            .text2 {
+                position: relative;
+                bottom: 14%;
+                margin-left: 0.20rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-box { 
+        .box {  
+            i { 
+                margin-top: 1rem;
+                margin-left: 1.125rem;
+                color: $secondary;
+                }
+            .text1 {
+                position: relative;
+                bottom: 17%;
+                }
+            .text2 {
+                position: relative;
+                bottom: 14%;
+                margin-left: 0.20rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container-box { 
+        .box {  
+            i { 
+                margin-top: 1rem;
+                margin-left: 1.125rem;
+                color: $secondary;
+                }
+            .text1 {
+                position: relative;
+                bottom: 18%;
+                }
+            .text2 {
+                position: relative;
+                bottom: 14%;
+                margin-left: 0.20rem;
+            }
+        }
+    }
+}
+
+//media query for typography 
+
+@media screen and (min-width: 360px) {
+    .container-box {
+        .box {
+            .text1 {
+                span {
+                    b {
+                        font-size: 1.125rem;
+                    }
+                }
+                p {
+                    font-size: 0.875rem;
+                }
+            }
+            .text2 {
+                p {
+                    font-size: 1.5rem;
+                }
+                sup {
+                    font-size: 0.875rem;
+                }
+                small {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+    .container-box {
+        .box {
+            .text1 {
+                span {
+                    b {
+                        font-size: 1.125rem;
+                    }
+                }
+                p {
+                    font-size: 0.875rem;
+                }
+            }
+            .text2 {
+                p {
+                    font-size: 1.5rem;
+                }
+                sup {
+                    font-size: 0.875rem;
+                }
+                small {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .container-box {
+        .box {
+            .text1 {
+                span {
+                    b {
+                        font-size: 1.5rem;
+                    }
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .text2 {
+                p {
+                    font-size: 1.75rem;
+                }
+                sup {
+                    font-size: 1rem;
+                }
+                small {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .container-box {
+        .box {
+            .text1 {
+                span {
+                    b {
+                        font-size: 1.125rem;
+                    }
+                }
+                p {
+                    font-size: 0.8125rem;
+                }
+            }
+            .text2 {
+                p {
+                    font-size: 1.5rem;
+                }
+                sup {
+                    font-size: 0.75rem;
+                }
+                small {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container-box {
+        .box {
+            .text1 {
+                span {
+                    b {
+                        font-size: 1.5rem;
+                    }
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+            .text2 {
+                p {
+                    font-size: 1.75rem;
+                }
+                sup {
+                    font-size: 0.75rem;
+                }
+                small {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}

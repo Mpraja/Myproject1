@@ -1,0 +1,35 @@
+.content2 {
+    display: block;
+    float: right;
+    margin-top: 3.75rem;
+    .display-1 {
+        color: black;
+    }
+    span {
+        color: $secondary;
+    }
+    p {
+        color: black;
+    }
+}
+
+.btn-warning {
+    background-color: $button-warning-bg;
+    border-color: $button-warning-bg;
+    color: $secondary;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 1rem;
+    &:hover {
+        background-color: $secondary;
+        border-color: $secondary;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .warning-buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
